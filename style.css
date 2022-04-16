@@ -5,7 +5,9 @@
 
 body {
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: 'Futura', sans-serif;
+    background: #0D042B;
+    color:#FFCEFC;
 }
 header, section {
     padding: 20px;
@@ -14,8 +16,44 @@ p, li {
     line-height: 1.5em;
 }
 
-#inspiration {
-    background-color: #F0F0F0;
+#tutorials {
+    background-color: #3C2296;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+#inspiration {
+    background-color: #1B095B;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#homework {
+    background-color:#210975;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+a:link {
+    color:white;
+    text-decoration: none;
+}
+
+a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+.center {
+    display:block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
