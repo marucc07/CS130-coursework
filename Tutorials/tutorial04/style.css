@@ -57,7 +57,7 @@
 @media screen and (max-width: 600px) {
    .container {
        grid-template-columns: 1fr 1fr;
-       grid-template-rows: 1fr 1fr .5fr 2fr 2fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr .5fr 2fr 2fr 2fr 1fr;
        grid-template-areas:
          "p1 p1"
          "p2 p2"
