@@ -2,8 +2,8 @@ body {
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     color: #fff;
 }
-a, a:hover, a:visited, a:active { 
-    color: #fff;
+a, a:visited { 
+    color: lightgrey;
     text-decoration: none;
 }
 
@@ -14,10 +14,15 @@ a, a:hover, a:visited, a:active {
 /**********/
 /* Layout */
 /**********/
-aside, footer, header, nav, section, article {
+aside, footer, section, article {
     display: flex;
     flex-direction: column;
 }
+header, nav {
+    display:flex;
+    flex-direction: row;
+}
+
 body {
     overflow: hidden;
     margin: 0px;
@@ -33,6 +38,7 @@ aside {
     background-color: #000;
     grid-area: left;
 }
+
 header {
     background: #111;
     position: fixed;
@@ -74,67 +80,131 @@ footer {
     background-color: hsla(0,0%,100%,.3);
 }
 
+h2 {
+    font-size: 1.4em;
+    padding-top: 5px;
+    line-height: 20px;
+}
 
+p {
+    font-weight: 300;
+    font-size: 1.2em;
+    color: lightgrey;
+}
+
+footer img {
+    border-radius: 0%;
+
+}
 
 /***************************/
 /* Part A: Left Navigation */
 /***************************/
 
-/* Your Code Here */
 #sidebar {
-    padding:10px;
-
+    padding-left:15px;
 }
 
+#sidebar i {
+    margin: 15px;
+}
 
+aside .selected {
+    border-left: 3px solid #1DB954;
+}
+
+#sidebar a:hover {
+    color: white;
+    font-weight:bold;
+}
 
 /********************************/
 /* Part B: Header & Nav Styling */
 /********************************/
 
-/* Your Code Here */
+header {
+    display: flex;
+    justify-content: flex-end;
+}
 
+nav {
+    padding: 20px;
+    
+}
 
+nav a, header a {
+    margin:25px;
+    font-size: .9em;
+}
 
+nav a:hover {
+    border-bottom: 2.5px solid #1DB954;
+    margin-bottom: 10px;
+}
 
+nav .selected {
+    border-bottom: 2.5px solid #1DB954;
+    margin-bottom: 10px;
+}
+
+#upgrade {
+    border: 2px solid lightgrey;
+    color: white;
+    padding: 10px 35px;
+    font-size: .8em;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#profile {
+    color: white;
+    background-color: #222;
+    padding: 10px 35px;
+    font-size: .8em;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#upgrade:hover , #profile:hover {
+    background-color: 	#303030;
+}
 
 /*************************/
 /* Part C: Artists Panel */
 /*************************/
 
-/* Your Code Here */
 #featured-content {
-    /* We first create a flex layout context */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-       "left main"
-       "bottom bottom";
-    height: 100%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    width:600px;
-  }
-  
+       "main"
+       "main";
+    height: 100;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin:10px;
+}
+
 .artist-card{
-    padding: 5px;
-    margin-top: 10px;
     line-height: 10px;
     color: white;
     font-weight: bold;
     font-size: 12px;
     text-align: left;
     background:#222; 
-    padding: 10px;
-    border-radius: 10%;
+    padding: 25px;
+    border-radius: 5%;
+}
+
+footer .img {
+    border-radius: 0%;
 }
 
 img {
     border-radius: 50%;
+    max-width:100%;
 }
-
-
 
 /**************************/
 /* Part D: Responsive UIs */
@@ -142,4 +212,25 @@ img {
 
 /* Your Code Here */
 
+@media (max-width: 1400px) {
+    #featured-content {
+       grid-template-columns: 1fr 1fr 1fr;
+       }
+}
 
+@media (max-width: 750px) {
+    body {
+       grid-template-columns: 1fr;
+    }
+    #featured-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    aside {
+        display:none;
+    }
+    header {
+        display: flex;
+        width: 100%;
+    }
+}
