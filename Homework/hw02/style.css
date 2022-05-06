@@ -80,6 +80,7 @@ footer {
     background-color: hsla(0,0%,100%,.3);
 }
 
+
 h2 {
     font-size: 1.4em;
     padding-top: 5px;
@@ -118,9 +119,11 @@ aside .selected {
     font-weight:bold;
 }
 
+
 /********************************/
 /* Part B: Header & Nav Styling */
 /********************************/
+
 
 header {
     display: flex;
