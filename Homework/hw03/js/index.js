@@ -67,7 +67,7 @@ const showPrev = () => {
     currentIndex -= 1;
     console.log("currentIndex:", currentIndex);
     if (currentIndex < 0) {
-        currentIndex = images.length;
+        currentIndex = 7;
     }
     const image = images[currentIndex];
     document.querySelector('.featured_image').style.backgroundImage = `url('${image}')`;
