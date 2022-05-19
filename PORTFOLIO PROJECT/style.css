@@ -1,0 +1,179 @@
+body {
+    background-color: #eee6ff;
+}
+
+
+.intro {
+    height: 95vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    margin: 0;
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 60PX;
+    margin-top: 0px;
+    padding-top:40vh;
+    font-family: 'Koulen', cursive;
+    z-index: 100;
+    align-content: center;
+}
+
+h2 {
+    color: #181e24;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Koulen', cursive;
+    line-height:90px;
+    margin-bottom:0;
+}
+
+h3 {
+    color:black;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Prompt', sans-serif;
+    line-height:100px;
+    margin-bottom:10;
+    font-weight:300;
+}
+
+
+.container {
+    display:flex;
+    justify-content: center;
+}
+
+/**************************/
+/* Galleries */
+/**************************/
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+       "a b"
+       "c c"
+       "d e"
+       "f f";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-items: center;
+}
+
+
+/**************************/
+/* Images */
+/**************************/
+
+.image1 {
+    grid-area:a;
+}
+
+.image2 {
+    grid-area:b;
+}
+
+.image3 {
+    grid-area:c;
+}
+
+.image4 {
+    grid-area:d;
+}
+
+.image5 {
+    grid-area:e;
+    margin:0;
+}
+
+.image6 {
+    grid-area:f;
+}
+
+/**************************/
+/* Horizontal & Vertical Images */
+/**************************/
+
+
+.v-image {
+    width:30vw;
+    padding:10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.h-image {
+    padding:10px;
+    width: 62vw;
+    align-self: center;
+    justify-self: center;
+}
+
+/**************************/
+/* Responsive UIs */
+/**************************/
+
+
+/* Ipad*/
+
+@media (max-width: 1000px) {
+    
+
+    .v-image {
+        width:40vw;
+        padding:10px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .h-image {
+        padding:10px;
+        width: 83vw;
+        align-self: center;
+        justify-self: center;
+    }
+    
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+    .gallery2 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+           "a"
+           "b"
+           "c"
+           "d"
+           "e"
+           "f";
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+        justify-items: center;
+    }
+    .v-image {
+        width:90vw;
+        padding:5px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .h-image {
+        padding:5px;
+        width: 90vw;
+        align-self: center;
+        justify-self: center;
+    }
+    
+}
