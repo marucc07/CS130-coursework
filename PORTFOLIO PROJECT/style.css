@@ -2,12 +2,33 @@ body {
     background-color: #eee6ff;
 }
 
+.navbar {
+    margin: 20px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:100;
+}
+.navbar a, .navbar strong {
+    margin-right: 15px;
+    color:rgb(255, 255, 255)
+}
+
+#video {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    z-index:0;
+    object-fit: cover;
+  }
 
 .intro {
+    position:relative;
     height: 95vh;
-    position: relative;
     background-size: cover;
     background-position: center;
+    z-index:100;
 }
 
 #container1 {
@@ -37,6 +58,7 @@ h2 {
     color: #181e24;
     text-align: center;
     font-size: 100px;
+    padding-top: 5%;
     font-family: 'Koulen', cursive;
     line-height:90px;
     margin-bottom:0;
@@ -45,7 +67,7 @@ h2 {
 h3 {
     color:black;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Prompt', sans-serif;
     line-height:100px;
     margin-bottom:10;
@@ -69,7 +91,8 @@ h3 {
     grid-template-areas:
        "a b d e"
        "c c c c"
-       "f f f f";
+       "f f f f"
+       "i j h g";
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     justify-items: center;
@@ -98,12 +121,28 @@ h3 {
 
 .image5 {
     grid-area:e;
-    margin:0;
 }
 
 .image6 {
     grid-area:f;
 }
+
+.image7 {
+    grid-area:g;
+}
+
+.image8 {
+    grid-area:h;
+}
+
+.image9 {
+    grid-area:i;
+}
+
+.image10 {
+    grid-area:j;
+}
+
 
 /**************************/
 /* Horizontal & Vertical Images */
@@ -145,7 +184,11 @@ h3 {
            "c"
            "d"
            "e"
-           "f";
+           "f"
+           "g"
+           "h"
+           "i"
+           "j";
         grid-row-gap: 5px;
         grid-column-gap: 5px;
         justify-items: center;
