@@ -59,7 +59,7 @@ body {
 .container-carousel {
     background-color: white;
     margin: 0;
-    padding-bottom: 10%;
+    padding-bottom: 10vh;
     z-index:100;
 }
 
@@ -282,7 +282,7 @@ p {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -375,7 +375,7 @@ p {
            "n m";
         grid-row-gap: 10px;
         grid-column-gap: 10px;
-        padding-bottom:15vh;
+        padding-bottom:5vh;
         justify-items: center;
     }
     
@@ -395,9 +395,10 @@ p {
         font-family: 'Prompt', sans-serif;
         line-height:30px;
         margin-bottom:0;
+        padding-top: 0px;
         padding-left:140px;
         padding-right:140px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
 
 }
@@ -444,11 +445,24 @@ p {
         padding-left:5%;
         padding-right:5%;
     }
+    p {
+        color: #181e24;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Prompt', sans-serif;
+        line-height:30px;
+        margin-bottom:0;
+        padding-top: 0px;
+        padding-left:50px;
+        padding-right:50px;
+        padding-bottom: 30px;
+    }
+
     h2 {
         color: #181e24;
         text-align: center;
-        font-size: 90px;
+        font-size: 50px;
         font-family: 'Koulen', cursive;
         line-height:90px;
-        margin-bottom:0;
+        padding-bottom:30px;
 }
